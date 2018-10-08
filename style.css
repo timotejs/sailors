@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    position: absolute;
+    left: 50px;
+}
+
+#links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#social-media {
+    position: absolute;
+    right: 50px;
+}
