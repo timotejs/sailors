@@ -1,25 +1,207 @@
 body {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+    background-color: #EEEEEE;
 }
 
 nav {
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	height: 80px;
+	width: 100%;
+    z-index: 100;
 }
 
 #logo {
-    position: absolute;
-    left: 50px;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #links {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#links a {
+	margin: 0 15px;
+	color: #707070;
+	text-decoration: none;
+}
+
+#social-media {
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#social-media a {
+	position: relative;
+	margin: 0 30px;
+}
+
+#home-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#title-main {
+	font-weight: bold;
+	font-size: 4em;
+	position: absolute;
+	color: #707070;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.unselectable {
+	-webkit-user-select: none;        
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container {
+  padding-right: 150px;
+  padding-left: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+#about-txt {
+    margin-top: 80px;
+}
+
+#about-txt p {
+    color: #707070;
+    font-size: 20px;
+}
+
+.card {
+    position: relative;
+    display: block;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -o-box-shadow:      0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -icab-box-shadow:   0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -khtml-box-shadow:  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow:    0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 20px 30px;
+}
+
+.about-us h3 {
+    color: #2E3192;
+    font-size: 22px;
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    color: #707070;
+    font-size: 16px;
+}
+
+.avatar {
     position: absolute;
+    transform: translateY(-120px);
+    -webkit-filter: drop-shadow(0 3px 6px rgba(0,0,0,0.16)) drop-shadow(0 3px 6px rgba(0,0,0,0.23));
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.16)) drop-shadow(0 3px 6px rgba(0,0,0,0.23));
+}
+
+.title {
+    color: #2E3192;
+    font-size: 30px;
+}
+
+.mb {
+    margin-bottom: 300px;
+}
+    
+.mbs {
+    margin-bottom: 200px;
+}
+
+.contact {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.msg {
+    grid-column: span 2 / auto;
+}
+
+.contact-input {
+    border: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #707070;
+    font-size: 16px;
+}
+
+.contact-input:focus, .contact-submit:hover {
+    outline-width: 0;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.contact-submit {
+    border: none;
+    background-color: #2E3192;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    align-self: flex-end;
+    font-size: 16px;
+}
+
+.contact-submit:hover {
+    cursor: pointer;
+    outline-width: 0;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #2E3192;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    text-align: center;
+}
+
+.social-media-footer {
+    position: absolute;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#social-media {
-    position: absolute;
-    right: 50px;
+#links-footer {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    top: 180px;
 }

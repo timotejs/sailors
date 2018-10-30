@@ -1,30 +1,79 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Sailors</title>
+    <meta charset="utf-8">
+    <title>Sailors</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
+
 <body>
-	<nav>
-		<img src="logo.png" alt="Sailors logo" id="logo" width="50px" height="50px">
-		<div id="links">
-			<a>About</a>
-			<a>Projects</a>
-			<a>Contact</a>
-		</div>
-		<div id="social-media">
-			<a>Instagram</a>
-			<a>Dribble</a>
-			<a>LinkedIn</a>
-		</div>
-		</div>
-	</nav>
+    <nav>
+        <a href="index.html"><img src="logo.svg" alt="Sailors logo" id="logo" class="unselectable" width="60px" height="60px"></a>
+        <div id="links" class="unselectable">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="social-media">
+            <a href="#"><img src="instagram-logo.svg" alt="Instagram logo" id="logo" width="30px" height="30px"></a>
+            <a href="#"><img src="linkedin-logo.svg" alt="LinkedIn logo" id="logo" width="30px" height="30px"></a>
+            <a href="#"><img src="dribble-logo.svg" alt="Dribble logo" id="logo" width="30px" height="30px"></a>
+        </div>
+        </div>
+    </nav>
+    <div id="home-bg">
+        <h1 id="title-main" class="unselectable">Sail<br>&nbsp&nbsp <span style="color: #00AEEF;">with</span><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp us<span style="color: #2E3192;">.</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="about mb">
+            <div><img src="svjetionik.svg" alt="Lighthouse image" width="200px" height="auto"></div>
+            <div id="about-txt">
+                <h3 class="title">Sailors</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis mauris mollis nunc sodales sagittis sit amet eu nibh. Pellentesque odio dolor, vulputate et augue a, malesuada mattis justo. Ut euismod diam purus, vel semper lectus condimentum vitae. In quis justo nisi. Aenean vitae neque eu orci convallis volutpat. Donec sit amet convallis velit. Duis commodo lorem vitae lorem rhoncus auctor.</p>
+            </div>
+        </div>
+
+        <div class="card about-us mbs">
+            <img src="timotej-img.png" class="avatar" alt="Timotej avatar image" width="150px" height="170px">
+            <h3>Timotej Sofijanović</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis mauris mollis nunc sodales sagittis sit amet eu nibh. Pellentesque odio dolor, vulputate et augue a, malesuada mattis justo. Ut euismod diam purus, vel semper lectus condimentum vitae. In quis justo nisi. Aenean vitae neque eu orci convallis volutpat. Donec sit amet convallis velit. Duis commodo lorem vitae lorem rhoncus auctor.</p>
+        </div>
+
+        <div class="card about-us mb">
+            <img src="valentin-img.png" class="avatar" alt="Valentin avatar image" width="170px" height="170px" style="right: 30px;">
+            <h3 style="margin-left: auto;">Valentin Pesocky</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis mauris mollis nunc sodales sagittis sit amet eu nibh. Pellentesque odio dolor, vulputate et augue a, malesuada mattis justo. Ut euismod diam purus, vel semper lectus condimentum vitae. In quis justo nisi. Aenean vitae neque eu orci convallis volutpat. Donec sit amet convallis velit. Duis commodo lorem vitae lorem rhoncus auctor.</p>
+        </div>
+
+        <div class="mb">
+            <h3 class="title">Contact us</h3>
+            <form class="contact">
+                <div style="padding-right: 30px;"><input type="text" class="card contact-input" placeholder="Full name" name="fname"></div>
+                <div style="padding-left: 30px;"><input type="email" class="card contact-input" placeholder="Email" name="email"></div>
+                <div class="msg"><textarea type="text" class="card contact-input" style="height: 250px; resize: none;" placeholder="Message" name="message"></textarea></div>
+                <div><input type="submit" class="card contact-submit" value="Send"><span id="info"></div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="social-media-footer">
+            <div><img src="instagram-logo-footer.svg" alt="Instagram logo" id="logo-footer" width="35px" height="35px"></div>
+            <div><img src="linkedin-logo.svg" alt="Linkedin logo" id="logo-footer" width="35px" height="35px"></div>
+            <div><img src="dribble-logo.svg" alt="Dribble logo" id="logo-footer" width="35px" height="35px"></div>
+        </div>
+        <span id="links-footer">
+            SAILORS | PROJECTS | ABOUT US | CONTACT
+        </span>
+    </footer>
 </body>
+
 </html>
